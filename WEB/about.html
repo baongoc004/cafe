@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>CAT COFFEE</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free Website Template" name="keywords">
+    <meta content="Free Website Template" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <div class="container-fluid p-0 nav-bar">
+        <nav class="navbar navbar-expand-lg bg-none navbar-dark py-3">
+            <a href="index.html" class="navbar-brand px-lg-4 m-0">
+                <div class="logo-container">
+                    <img class="m-0 display-4 text-uppercase text-white" style="width: 100px;" src="img/CAT COFFEE.png">
+                </div>
+            </a>
+            
+            
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                <div class="navbar-nav ml-auto p-4">
+                    <a href="index.html" class="nav-item nav-link ">Trang Chủ</a>
+                    <a href="about.html" class="nav-item nav-link active">Giới Thiệu</a>
+                      <a href="collection.html" class="nav-item nav-link " >Bộ sưu tập</a>
+                    <a href="menu.html" class="nav-item nav-link">Thực Đơn</a>
+                    <a href="new.html" class="nav-item nav-link">Tin Tức</a>
+                    <a href="contact.html" class="nav-item nav-link">Liên Hệ</a>
+                </div>
+                  <!-- Nút tìm kiếm, yêu thích, giỏ hàng, đăng nhập và đăng ký -->
+                  <div class="navbar-nav d-flex align-items-center p-4">
+                    <!-- Thanh tìm kiếm rút gọn -->
+                    <form class="form-inline mr-3">
+                        <input class="form-control form-control-sm" type="search" placeholder="Tìm kiếm" aria-label="Search" style="width: 120px;">
+                        <button class="btn btn-outline-light btn-sm ml-1" type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                    <!-- Nút giỏ hàng -->
+                    <a href="cart.html" class="btn btn-outline-light mr-2">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>         
+                    <!-- Nút danh sách yêu thích -->
+                    <a href="favorites.html" class="btn btn-outline-light mr-2">
+                        <i class="fas fa-heart"></i>
+                    </a>
+        
+                <!-- Nút Đăng Nhập, Đăng Ký và Đăng Xuất -->
+                    <a href="login.html" id="loginBtn" class="btn btn-outline-light mr-2">Đăng Nhập</a>
+                    <a href="signup.html" id="signupBtn" class="btn btn-primary mr-2">Đăng Ký</a>
+                    <button id="logoutBtn" class="btn btn-danger" style="display: none;" onclick="logout()">Đăng Xuất</button>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Page Header Start -->
+    <div class="container-fluid  mb-5 position-relative overlay-bottom">
+        <!-- Thêm video nền -->
+        <video autoplay muted loop playsinline class="bg-video" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1;">
+            <source src="video/bg_1.mp4" type="video/mp4">
+            Trình duyệt của bạn không hỗ trợ video nền.
+        </video>
+    
+        <div class="d-flex flex-column align-items-center justify-content-center pt-0 pt-lg-5" style="min-height: 400px; position: relative; z-index: 1;">
+            <h1 class="display-4 mb-3 mt-0 mt-lg-5 text-white text-uppercase">Về chúng tôi</h1>
+            <div class="d-inline-flex mb-lg-5">
+                <p class="m-0 text-white"><a class="text-white" href="">Trang chủ</a></p>
+                <p class="m-0 text-white px-2">/</p>
+                <p class="m-0 text-white">Về chúng tôi</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Page Header End -->
+
+
+    <!-- About Start -->
+    <div class="container-fluid pt-5">
+        <div class="container brand-story">
+            <div class="row">
+                <!-- Cột 1: Nội dung văn bản -->
+                <div class="col-12">
+                    <h2>CÂU CHUYỆN THƯƠNG HIỆU</h2>
+                    <p>CAT COFFEE - Một thương hiệu cà phê không chỉ nổi bật về chất lượng mà còn về tâm huyết trong từng sản phẩm. Mỗi tách cà phê được chúng tôi chuẩn bị đều là một hành trình từ những hạt cà phê tươi ngon nhất, được chọn lọc và chế biến cẩn thận.</p>
+                    <p>Chúng tôi tin rằng, cà phê không chỉ đơn thuần là một thức uống, mà còn là một phần của văn hóa, là những khoảnh khắc kết nối con người với nhau. Đó là lý do tại CAT COFFEE, chúng tôi luôn tìm cách nâng cao trải nghiệm của khách hàng bằng những sản phẩm chất lượng, dịch vụ tận tâm và không gian thưởng thức tuyệt vời.</p>
+                    <p>Để đáp ứng nhu cầu đa dạng của khách hàng, CAT COFFEE cung cấp nhiều loại hình dịch vụ và sản phẩm, từ các loại cà phê truyền thống đến những món đồ uống sáng tạo, được pha chế bởi đội ngũ barista chuyên nghiệp. Chúng tôi cũng chú trọng đến việc sử dụng nguyên liệu sạch và tự nhiên, cam kết mang đến những sản phẩm tốt nhất cho sức khỏe của khách hàng.</p>
+                </div>
+                <div class="container">
+                    <div class="row align-items-center mb-4">
+                        <!-- Hàng 1: Hình ảnh bên trái, văn bản bên phải -->
+                        <div class="col-md-6">
+                            <img src="img/coffee-1.png" alt="Phòng Pha Chế" class="story-image">
+                        </div>
+                        <div class="col-md-6">
+                            <h2>Không Gian Pha Chế Độc Đáo</h2>
+                            <p>Không gian pha chế của chúng tôi được thiết kế độc đáo và hiện đại, nơi mà những hạt cà phê được lựa chọn kỹ lưỡng từ những vùng trồng cà phê nổi tiếng nhất. Đội ngũ barista tận tâm của CAT COFFEE không ngừng sáng tạo và thử nghiệm để mang đến cho khách hàng những tách cà phê với hương vị tuyệt hảo nhất.</p>
+                            <p>Bên cạnh đó, không gian quán cũng được thiết kế thân thiện, ấm cúng, tạo cảm giác thoải mái cho khách hàng khi thưởng thức cà phê và trò chuyện cùng bạn bè.</p>
+                        </div>
+                    </div>
+    
+                    <div class="row align-items-center mb-4">
+                        <!-- Hàng 2: Văn bản bên trái, hình ảnh bên phải -->
+                        <div class="col-md-6">
+                            <h2>Nguyên Liệu Tự Nhiên và Tươi Mới</h2>
+                            <p>Tại CAT COFFEE, chúng tôi luôn cam kết sử dụng các nguyên liệu tự nhiên và tươi mới nhất. Mỗi sản phẩm đều được chúng tôi kiểm tra chất lượng nghiêm ngặt trước khi đưa đến tay khách hàng. Từ những hạt cà phê rang xay cho đến các nguyên liệu làm bánh, tất cả đều được chọn lọc kỹ càng.</p>
+                            <p>Chúng tôi tin rằng, sự khác biệt đến từ những nguyên liệu tốt nhất, đó chính là điều làm nên thương hiệu CAT COFFEE. Khách hàng sẽ cảm nhận được sự tươi ngon và hương vị đặc trưng trong từng sản phẩm mà chúng tôi cung cấp.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="img/coffee-2.png" alt="Nguyên Liệu và Phòng Pha Chế" class="story-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    
+        <!-- Services Section -->
+        <div class="container services pt-5">
+            <div class="row">
+                <!-- Each service item in two-column layout on smaller screens -->
+                <div class="col-lg-4 col-md-6 col-sm-12 service-item">
+                    <img src="img/icon-consulting.png" alt="Tư Vấn và Trải Nghiệm">
+                    <h3>TƯ VẤN VÀ TRẢI NGHIỆM</h3>
+                    <p>Đội ngũ tư vấn của chúng tôi luôn sẵn sàng giải đáp mọi thắc mắc của khách hàng về sản phẩm và dịch vụ.</p>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 service-item">
+                    <img src="img/icon-payment.png" alt="Thanh Toán Linh Hoạt">
+                    <h3>THANH TOÁN LINH HOẠT</h3>
+                    <p>Chúng tôi hỗ trợ nhiều phương thức thanh toán để thuận tiện nhất cho khách hàng.</p>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 service-item">
+                    <img src="img/icon-gift.png" alt="Gói Quà Miễn Phí">
+                    <h3>GÓI QUÀ MIỄN PHÍ</h3>
+                    <p>Dịch vụ gói quà miễn phí cho các sản phẩm, mang đến sự tiện lợi và bất ngờ cho khách hàng.</p>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 service-item">
+                    <img src="img/icon-purchase.png" alt="Mua Hàng Dễ Dàng">
+                    <h3>MUA HÀNG DỄ DÀNG</h3>
+                    <p>Trải nghiệm mua hàng nhanh chóng và bảo mật tuyệt đối tại Mê Cat Coffee.</p>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 service-item">
+                    <img src="img/icon-shipping.png" alt="Giao Hàng Nhanh Chóng">
+                    <h3>GIAO HÀNG NHANH CHÓNG</h3>
+                    <p>Dịch vụ giao hàng uy tín, mang lại sự hài lòng và tiện lợi cho khách hàng.</p>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 service-item">
+                    <img src="img/icon-transparency.png" alt="Chính Sách Minh Bạch">
+                    <h3>CHÍNH SÁCH MINH BẠCH</h3>
+                    <p>Chúng tôi luôn cung cấp thông tin rõ ràng và minh bạch cho mọi giao dịch.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer Start -->
+    <div class="container-fluid footer text-white mt-5 pt-5 px-0 position-relative overlay-top">
+        <div class="row mx-0 pt-5 px-sm-3 px-lg-5 mt-4">
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Liên Hệ</h4>
+                <p><i class="fa fa-map-marker-alt mr-2"></i>32 Đ. Ng. Sĩ Liên, Hưng Lợi, Ninh Kiều, Cần Thơ</p>
+                <p><i class="fa fa-phone-alt mr-2"></i>+84 123 456 789</p>
+                <p class="m-0"><i class="fa fa-envelope mr-2"></i>CATCOFFEE@gmail.com</p>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Theo Dõi Chúng Tôi</h4>
+                <p>Kết nối và cập nhật các tin tức mới nhất từ CAT COFFEE</p>
+                <div class="d-flex justify-content-start">
+                    <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-lg btn-outline-light btn-lg-square" href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Giờ Mở Cửa</h4>
+                <div>
+                    <h6 class="text-white text-uppercase">Thứ Hai - Thứ Sáu</h6>
+                    <p>8:00 Sáng - 8:00 Tối</p>
+                    <h6 class="text-white text-uppercase">Thứ Bảy - Chủ Nhật</h6>
+                    <p>2:00 Chiều - 8:00 Tối</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Đăng Ký Nhận Tin</h4>
+                <p>Nhận các thông tin mới nhất và ưu đãi đặc biệt từ CAT COFFEEE</p>
+                <div class="w-100">
+                    <div class="input-group">
+                        <input type="text" class="form-control border-light" style="padding: 25px;" placeholder="Email của bạn">
+                        <div class="input-group-append">
+                            <button class="btn btn-primary font-weight-bold px-3">Đăng Ký</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid text-center text-white border-top mt-4 py-4 px-sm-3 px-md-5" style="border-color: rgba(256, 256, 256, .1) !important;">
+            <p class="mb-2 text-white">Bản quyền &copy; <a class="font-weight-bold" href="#">CAT COFFEE</a>. Đã đăng ký bản quyền.</p>
+            <p class="m-0 text-white">Thiết kế bởi <a class="font-weight-bold">KIM CHI</a></p>
+        </div>
+    </div>
+    
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

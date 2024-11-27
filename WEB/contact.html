@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>CAT COFFEE</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free Website Template" name="keywords">
+    <meta content="Free Website Template" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <div class="container-fluid p-0 nav-bar">
+        <nav class="navbar navbar-expand-lg bg-none navbar-dark py-3">
+            <a href="index.html" class="navbar-brand px-lg-4 m-0">
+                <div class="logo-container">
+                    <img class="m-0 display-4 text-uppercase text-white" style="width: 100px;" src="img/CAT COFFEE.png">
+                </div>
+            </a>
+            
+            
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                <div class="navbar-nav ml-auto p-4">
+                    <a href="index.html" class="nav-item nav-link">Trang Chủ</a>
+                    <a href="about.html" class="nav-item nav-link">Giới Thiệu</a>
+                      <a href="collection.html" class="nav-item nav-link " >Bộ sưu tập</a>
+                    <a href="menu.html" class="nav-item nav-link">Thực Đơn</a>
+                    <a href="new.html" class="nav-item nav-link">Tin Tức</a>
+                    <a href="contact.html" class="nav-item nav-link active">Liên Hệ</a>
+                </div>
+                  <!-- Nút tìm kiếm, yêu thích, giỏ hàng, đăng nhập và đăng ký -->
+                  <div class="navbar-nav d-flex align-items-center p-4">
+                    <!-- Thanh tìm kiếm rút gọn -->
+                    <form class="form-inline mr-3">
+                        <input class="form-control form-control-sm" type="search" placeholder="Tìm kiếm" aria-label="Search" style="width: 120px;">
+                        <button class="btn btn-outline-light btn-sm ml-1" type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                    <!-- Nút giỏ hàng -->
+                    <a href="cart.html" class="btn btn-outline-light mr-2">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>         
+                    <!-- Nút danh sách yêu thích -->
+                    <a href="favorites.html" class="btn btn-outline-light mr-2">
+                        <i class="fas fa-heart"></i>
+                    </a>
+        
+                <!-- Nút Đăng Nhập, Đăng Ký và Đăng Xuất -->
+                    <a href="login.html" id="loginBtn" class="btn btn-outline-light mr-2">Đăng Nhập</a>
+                    <a href="signup.html" id="signupBtn" class="btn btn-primary mr-2">Đăng Ký</a>
+                    <button id="logoutBtn" class="btn btn-danger" style="display: none;" onclick="logout()">Đăng Xuất</button>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Page Header Start -->
+
+<div class="container-fluid  mb-5 position-relative overlay-bottom">
+    <video autoplay muted loop playsinline class="bg-video" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1;">
+        <source src="video/bg_10.mp4" type="video/mp4">
+        Trình duyệt của bạn không hỗ trợ video nền.
+    </video>
+    <div class="d-flex flex-column align-items-center justify-content-center pt-0 pt-lg-5" style="min-height: 400px">
+        <h1 class="display-4 mb-3 mt-0 mt-lg-5 text-white text-uppercase">Liên hệ</h1>
+        <div class="d-inline-flex mb-lg-5">
+            <p class="m-0 text-white"><a class="text-white" href="">Trang chủ</a></p>
+            <p class="m-0 text-white px-2">/</p>
+            <p class="m-0 text-white">Liên hệ</p>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Page Header End -->
+
+
+    <!-- Contact Start -->
+    <div class="container-fluid pt-5">
+        <div class="container">
+            <div class="section-title">
+                <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Liên Hệ</h4>
+                <h1 class="display-4">Hãy Liên Hệ Với Chúng Tôi</h1>
+            </div>
+            <div class="row px-3 pb-2">
+                <div class="col-sm-4 text-center mb-3">
+                    <i class="fa fa-2x fa-map-marker-alt mb-3 text-primary"></i>
+                    <h4 class="font-weight-bold">Địa Chỉ</h4>
+                    <p>32 Đ. Ng. Sĩ Liên, Hưng Lợi, Ninh Kiều, Cần Thơ</p>
+                </div>
+                <div class="col-sm-4 text-center mb-3">
+                    <i class="fa fa-2x fa-phone-alt mb-3 text-primary"></i>
+                    <h4 class="font-weight-bold">Điện Thoại</h4>
+                    <p>+84 123 456 789</p>
+                </div>
+                <div class="col-sm-4 text-center mb-3">
+                    <i class="far fa-2x fa-envelope mb-3 text-primary"></i>
+                    <h4 class="font-weight-bold">Email</h4>
+                    <p>CATCOFFEE@gmail.com</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 pb-5">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1005809.127622055!2d104.60742364687502!3d10.02165300000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31a089bedc2c193f%3A0x1177259a69cd94d1!2sM%C3%AA%20Cat%20Coffee%20%26%20Tea!5e0!3m2!1svi!2s!4v1730440770669!5m2!1svi!2s" width="100%" height="443px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="col-md-6 pb-5">
+                    <div class="contact-form">
+                        <div id="success"></div>
+                        <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                            <div class="control-group">
+                                <input type="text" class="form-control bg-transparent p-4" id="name" placeholder="Tên Của Bạn"
+                                    required="required" data-validation-required-message="Vui lòng nhập tên của bạn" />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="control-group">
+                                <input type="email" class="form-control bg-transparent p-4" id="email" placeholder="Email Của Bạn"
+                                    required="required" data-validation-required-message="Vui lòng nhập email của bạn" />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="control-group">
+                                <input type="text" class="form-control bg-transparent p-4" id="subject" placeholder="Chủ Đề"
+                                    required="required" data-validation-required-message="Vui lòng nhập chủ đề" />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="control-group">
+                                <textarea class="form-control bg-transparent py-3 px-4" rows="5" id="message" placeholder="Lời Nhắn"
+                                    required="required"
+                                    data-validation-required-message="Vui lòng nhập lời nhắn của bạn"></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div>
+                                <button class="btn btn-primary font-weight-bold py-3 px-5" type="submit" id="sendMessageButton">Gửi Lời Nhắn</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Contact End -->
+
+
+   <!-- Footer Start -->
+   <div class="container-fluid footer text-white mt-5 pt-5 px-0 position-relative overlay-top">
+    <div class="row mx-0 pt-5 px-sm-3 px-lg-5 mt-4">
+        <div class="col-lg-3 col-md-6 mb-5">
+            <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Liên Hệ</h4>
+            <p><i class="fa fa-map-marker-alt mr-2"></i>32 Đ. Ng. Sĩ Liên, Hưng Lợi, Ninh Kiều, Cần Thơ</p>
+            <p><i class="fa fa-phone-alt mr-2"></i>+84 123 456 789</p>
+            <p class="m-0"><i class="fa fa-envelope mr-2"></i>CATCOFFEE@gmail.com</p>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5">
+            <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Theo Dõi Chúng Tôi</h4>
+            <p>Kết nối và cập nhật các tin tức mới nhất từ CAT COFFEE</p>
+            <div class="d-flex justify-content-start">
+                <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-lg btn-outline-light btn-lg-square" href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5">
+            <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Giờ Mở Cửa</h4>
+            <div>
+                <h6 class="text-white text-uppercase">Thứ Hai - Thứ Sáu</h6>
+                <p>8:00 Sáng - 8:00 Tối</p>
+                <h6 class="text-white text-uppercase">Thứ Bảy - Chủ Nhật</h6>
+                <p>2:00 Chiều - 8:00 Tối</p>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5">
+            <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Đăng Ký Nhận Tin</h4>
+            <p>Nhận các thông tin mới nhất và ưu đãi đặc biệt từ CAT COFFEEE</p>
+            <div class="w-100">
+                <div class="input-group">
+                    <input type="text" class="form-control border-light" style="padding: 25px;" placeholder="Email của bạn">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary font-weight-bold px-3">Đăng Ký</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid text-center text-white border-top mt-4 py-4 px-sm-3 px-md-5" style="border-color: rgba(256, 256, 256, .1) !important;">
+        <p class="mb-2 text-white">Bản quyền &copy; <a class="font-weight-bold" href="#">CAT COFFEE</a>. Đã đăng ký bản quyền.</p>
+        <p class="m-0 text-white">Thiết kế bởi <a class="font-weight-bold">KIM CHI</a></p>
+    </div>
+</div>
+
+<!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
